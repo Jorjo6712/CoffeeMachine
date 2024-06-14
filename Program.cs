@@ -7,6 +7,13 @@ public class Program
 {
     static void Main()
     {
+        IBeanGrinder beanGrinder = new BeanGrinder();
+        IFilter filter = new Filter();
+        IHeater heater = new Heater();
+        IWaterTank waterTank = new WaterTank();
+        Coffee coffee = new Espresso();
         
+        ICoffeeMachineController coffeeMachineController = new CoffeeMachineController(heater, filter, beanGrinder, waterTank, coffee);
+        coffeeMachineController.StartMachine();
     }
 }

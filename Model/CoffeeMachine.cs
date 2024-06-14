@@ -26,6 +26,6 @@ public class CoffeeMachine : ICoffeeMachine
         heater.HeatWater();
         filter.FilterCoffee();
         coffee.Brew();
-        Console.WriteLine("Coffee is ready!");
+        Console.WriteLine($"{coffee} is ready!");
     }
 }

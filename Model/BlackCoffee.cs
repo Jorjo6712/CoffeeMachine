@@ -6,4 +6,9 @@ public class BlackCoffee : Coffee
     {
         Console.WriteLine("Brewing Black Coffee...");
     }
+    
+    public override string ToString()
+    {
+        return "Black Coffee";
+    }
 }
